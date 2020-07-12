@@ -1,0 +1,43 @@
+name: fluttercommerce
+description: Shopping UI design in Flutter
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  font_awesome_flutter: ^8.4.0
+  country_pickers: ^1.1.0
+  flutter_icons: ^0.2.5
+  fancy_bottom_navigation: ^0.3.2
+  carousel_slider: ^1.3.0
+  division: ^0.6.1
+  page_transition: '^1.1.0'
+  bottom_navy_bar: ^5.1.0
+  sliding_up_panel: ^0.3.4
+  flutter_xlider: ^2.5.1
+  intro_views_flutter: ^2.6.0
+  rflutter_alert: ^1.0.3
+  hidden_drawer_menu: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+   - assets/
+   - assets/images/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/font/Montserrat.ttf
