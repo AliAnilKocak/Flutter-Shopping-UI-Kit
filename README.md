@@ -31,7 +31,7 @@ I maked an e-commerce ui in Flutter for Android and iOS, I developed this applic
 
 </pre>
 
-
+<img src="ss/1.png" alt="drawing" style="width:200px;"/>
 
 
 ## Install
