@@ -30,7 +30,7 @@ I maked an e-commerce ui in Flutter for Android and iOS, I developed this applic
 <pre>
 
 </pre>
-
+<img src="ss/1.png" alt="drawing" style="width:200px;"/>
 ![](ss/1.png)
 ![](ss/2.png)
 ![](ss/3.png)
