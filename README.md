@@ -30,31 +30,15 @@ I maked an e-commerce ui in Flutter for Android and iOS, I developed this applic
 <pre>
 
 </pre>
-<img src="ss/1.png" alt="drawing" style="width:200px;"/>
-![](ss/1.png)
-![](ss/2.png)
-![](ss/3.png)
-![](ss/4.png)
-![](ss/5.png)
-![](ss/6.png)
-![](ss/7.png)
-![](ss/8.png)
-![](ss/9.png)
-![](ss/10.png)
-![](ss/11.png)
-![](ss/12.png)
-![](ss/13.png)
-![](ss/14.png)
-![](ss/15.png)
-![](ss/16.png)
-![](ss/17.png)
-![](ss/18.png)
-![](ss/19.png)
-![](ss/20.png)
-![](ss/21.png)
-![](ss/22.png)
-![](ss/23.png)
-![](ss/24.png)
+<img src="ss/1.png" width="220"> <img src="ss/2.png" width="220"> <img src="ss/3.png" width="220">
+<img src="ss/4.png" width="220"> <img src="ss/5.png" width="220"> <img src="ss/6.png" width="220">
+<img src="ss/7.png" width="220"> <img src="ss/8.png" width="220"> <img src="ss/9.png" width="220">
+<img src="ss/10.png" width="220"> <img src="ss/11.png" width="220"> <img src="ss/12.png" width="220">
+<img src="ss/13.png" width="220"> <img src="ss/14.png" width="220"> <img src="ss/15.png" width="220">
+<img src="ss/16.png" width="220"> <img src="ss/17.png" width="220"> <img src="ss/18.png" width="220">
+<img src="ss/19.png" width="220"> <img src="ss/20.png" width="220"> <img src="ss/21.png" width="220">
+<img src="ss/22.png" width="220"> <img src="ss/23.png" width="220"> <img src="ss/24.png" width="220">
+
 
 
 
@@ -88,6 +72,8 @@ Contributions, issues and feature requests are welcome !<br />Feel free to check
 ## Show your support
 
 Give a ⭐️ if this project helped you !
+
+Note: Auth Screens Inspired of => https://dribbble.com/shots/6487505-Food-Order-App 
 
 ## 📝 License
 
