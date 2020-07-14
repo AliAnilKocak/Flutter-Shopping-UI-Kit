@@ -20,6 +20,10 @@
 
 I maked an e-commerce ui in Flutter for Android and iOS, I developed this application just for learning purpose. There are 20+ screen variations.
 
+## Video
+
+[![Flutter Shopping UI Kit](https://img.youtube.com/vi/C-T86OV7PQs/0.jpg)](https://www.youtube.com/watch?v=C-T86OV7PQs)
+
 ## Screens
 
 ![Product Detail](ss/gifs/1.gif)
