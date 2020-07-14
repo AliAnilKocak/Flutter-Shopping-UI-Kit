@@ -18,7 +18,7 @@
 
 ## Introduction
 
-I maked an e-commerce ui in Flutter for Android and iOS, I developed this application just for learning purpose. There are 20+ screen variations.
+I made an e-commerce UI concept in Flutter for Android and iOS, I developed this application just for learning purposes. There are over 20 screen variations.
 
 ## Screens
 
