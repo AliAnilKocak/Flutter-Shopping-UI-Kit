@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 String _dialogMessage = "Loading...";
+
 enum ProgressDialogType { Normal, Download }
 
 ProgressDialogType _progressDialogType = ProgressDialogType.Normal;
@@ -164,7 +165,7 @@ class MessageBox {
         return CupertinoAlertDialog(
           title: Text('$title'),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('Ok'),
               onPressed: () {
                 Navigator.of(context).pop();

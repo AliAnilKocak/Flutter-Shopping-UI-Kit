@@ -87,11 +87,16 @@ class _ShoppingCartState extends State<ShoppingCart> {
               Padding(
                 padding: EdgeInsets.only(
                     top: 8.0, left: 8.0, right: 8.0, bottom: 16.0),
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(4.0),
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blueGrey),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                   ),
-                  color: Colors.blueGrey,
                   onPressed: () => {Nav.route(context, Checkout())},
                   child: Container(
                     padding: EdgeInsets.symmetric(

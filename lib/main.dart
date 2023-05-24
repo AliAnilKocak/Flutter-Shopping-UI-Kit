@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttercommerce/screens/home.dart';
 import 'package:fluttercommerce/screens/product.dart';
 
 import 'screens/login.dart';
@@ -18,13 +17,13 @@ class EcommerceApp extends StatelessWidget {
         accentColor: Colors.cyan[600],
         fontFamily: 'Montserrat',
         textTheme: TextTheme(
-          headline: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-          title: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
-          subtitle: TextStyle(fontSize: 16),
-          body1: TextStyle(fontSize: 14.0, fontFamily: 'Montserrat'),
-          display1: TextStyle(
+          headline3: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+          subtitle1: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+          subtitle2: TextStyle(fontSize: 16),
+          bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Montserrat'),
+          headline4: TextStyle(
               fontSize: 14.0, fontFamily: 'Montserrat1', color: Colors.white),
-          display2: TextStyle(
+          headline5: TextStyle(
               fontSize: 14.0, fontFamily: 'Montserrat', color: Colors.black54),
         ),
       ),

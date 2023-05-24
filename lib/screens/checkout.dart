@@ -110,16 +110,22 @@ class _CheckoutState extends State<Checkout> {
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 24.0),
-                      child: FlatButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(4.0),
+                      child: TextButton(
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Color(0xFFF93963)),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4.0),
+                            ),
+                          ),
                         ),
-                        color: Color(0xFFF93963),
                         onPressed: () => {
                           showDialog(
                             context: context,
                             // ignore: deprecated_member_use
-                            child: AlertDialog(
+                            builder: (BuildContext context) => AlertDialog(
                               shape: RoundedRectangleBorder(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(16.0))),
@@ -150,12 +156,19 @@ class _CheckoutState extends State<Checkout> {
                                         style: TextStyle(fontSize: 16),
                                       ),
                                     ),
-                                    FlatButton(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(4.0),
+                                    TextButton(
+                                      style: ButtonStyle(
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Color(0xFFF93963)),
+                                        shape: MaterialStateProperty.all<
+                                            RoundedRectangleBorder>(
+                                          RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(4.0),
+                                          ),
+                                        ),
                                       ),
-                                      color: Color(0xFFF93963),
                                       onPressed: () => {},
                                       child: Container(
                                         padding: EdgeInsets.symmetric(
@@ -185,7 +198,7 @@ class _CheckoutState extends State<Checkout> {
                                         ),
                                       ),
                                     ),
-                                    FlatButton(
+                                    TextButton(
                                       child: Text("Go to orders"),
                                       onPressed: () {},
                                     ),

@@ -17,14 +17,14 @@ class RegisterScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     "Welcome",
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 32.0),
                   child: Text(
                     "Register account",
-                    style: Theme.of(context).textTheme.subtitle,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
                 EditText(title: "Name"),

@@ -20,7 +20,7 @@ class SocialBottomSheet extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 12.0),
               child: Text(
                 " -----  Sign with  -----",
-                style: Theme.of(context).textTheme.subtitle,
+                style: Theme.of(context).textTheme.subtitle2,
               ),
             ),
             Row(
