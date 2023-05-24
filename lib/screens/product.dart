@@ -141,54 +141,64 @@ class _ProductPageState extends State<ProductPage> {
               SizedBox(
                 width: 6,
               ),
-              RaisedButton(
-                onPressed: () {
-                  _alert(context);
-                  setState(() {
-                    isClicked = !isClicked;
-                  });
-                },
-                textColor: Colors.white,
+              Padding(
                 padding: const EdgeInsets.all(0.0),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-                child: Container(
-                  width: MediaQuery.of(context).size.width / 2.9,
-                  height: 60,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: <Color>[
-                        CustomColors.GreenLight,
-                        CustomColors.GreenDark,
-                      ],
-                    ),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8.0),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: CustomColors.GreenShadow,
-                        blurRadius: 15.0,
-                        spreadRadius: 7.0,
-                        offset: Offset(0.0, 0.0),
-                      )
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Icon(
-                        MaterialCommunityIcons.getIconData(
-                          "cart-outline",
-                        ),
+                child: ElevatedButton(
+                  onPressed: () {
+                    _alert(context);
+                    setState(() {
+                      isClicked = !isClicked;
+                    });
+                  },
+                  style: ButtonStyle(
+                    textStyle: MaterialStateProperty.all<TextStyle>(
+                      TextStyle(
                         color: Colors.white,
                       ),
-                      new Text(
-                        "Add to Cart",
-                        style: TextStyle(color: Colors.white),
+                    ),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
                       ),
-                    ],
+                    ),
+                  ),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width / 2.9,
+                    height: 60,
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: <Color>[
+                          CustomColors.GreenLight,
+                          CustomColors.GreenDark,
+                        ],
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: CustomColors.GreenShadow,
+                          blurRadius: 15.0,
+                          spreadRadius: 7.0,
+                          offset: Offset(0.0, 0.0),
+                        )
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Icon(
+                          MaterialCommunityIcons.getIconData(
+                            "cart-outline",
+                          ),
+                          color: Colors.white,
+                        ),
+                        new Text(
+                          "Add to Cart",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -292,7 +302,7 @@ class _ProductPageState extends State<ProductPage> {
 
   showAlertDialog(BuildContext context) {
     // set up the button
-    Widget okButton = FlatButton(
+    Widget okButton = TextButton(
       child: Text("OK"),
       onPressed: () {
         Navigator.of(context).pop();
@@ -456,30 +466,32 @@ class _ProductPageState extends State<ProductPage> {
             Text("Capacity"),
             Row(
               children: <Widget>[
-                OutlineButton(
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(8.0)),
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                  ),
                   child: Text('64 GB'),
                   onPressed: () {}, //callback when button is clicked
-                  borderSide: BorderSide(
-                    color: Colors.grey, //Color of the border
-                    style: BorderStyle.solid, //Style of the border
-                    width: 0.8, //width of the border
-                  ),
                 ),
                 SizedBox(
                   width: 8,
                 ),
-                OutlineButton(
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(8.0)),
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                  ),
                   child: Text('128 GB'),
                   onPressed: () {}, //callback when button is clicked
-                  borderSide: BorderSide(
-                    color: Colors.red, //Color of the border
-                    style: BorderStyle.solid, //Style of the border
-                    width: 1, //width of the border
-                  ),
                 ),
               ],
             ),
@@ -489,44 +501,47 @@ class _ProductPageState extends State<ProductPage> {
             Text("Color"),
             Row(
               children: <Widget>[
-                OutlineButton(
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(8.0)),
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                  ),
                   child: Text('GOLD'),
                   onPressed: () {}, //callback when button is clicked
-                  borderSide: BorderSide(
-                    color: Colors.orangeAccent, //Color of the border
-                    style: BorderStyle.solid, //Style of the border
-                    width: 1.5, //width of the border
-                  ),
                 ),
                 SizedBox(
                   width: 8,
                 ),
-                OutlineButton(
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(8.0)),
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                  ),
                   child: Text('SILVER'),
                   onPressed: () {}, //callback when button is clicked
-                  borderSide: BorderSide(
-                    color: Colors.grey, //Color of the border
-                    style: BorderStyle.solid, //Style of the border
-                    width: 0.8, //width of the border
-                  ),
                 ),
                 SizedBox(
                   width: 8,
                 ),
-                OutlineButton(
-                  shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(8.0)),
+                OutlinedButton(
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                  ),
                   child: Text('PINK'),
                   onPressed: () {}, //callback when button is clicked
-                  borderSide: BorderSide(
-                    color: Colors.grey, //Color of the border
-                    style: BorderStyle.solid, //Style of the border
-                    width: 0.8, //width of the border
-                  ),
                 ),
               ],
             ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_xlider/flutter_xlider.dart';
+// import 'package:flutter_xlider/flutter_xlider.dart';
 
 class Filtre extends StatefulWidget {
   @override
@@ -150,39 +150,39 @@ class _FiltreState extends State<Filtre> {
               ],
             ),
           ),
-          FlutterSlider(
-            tooltip: FlutterSliderTooltip(
-              leftPrefix: Icon(
-                Icons.attach_money,
-                size: 19,
-                color: Colors.black45,
-              ),
-              rightSuffix: Icon(
-                Icons.attach_money,
-                size: 19,
-                color: Colors.black45,
-              ),
-            ),
-            trackBar: FlutterSliderTrackBar(
-              inactiveTrackBar: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.black12,
-                border: Border.all(width: 3, color: Colors.blue),
-              ),
-              activeTrackBar: BoxDecoration(
-                  borderRadius: BorderRadius.circular(4),
-                  color: Colors.red.withOpacity(0.5)),
-            ),
-            values: [30, 420],
-            rangeSlider: true,
-            max: 500,
-            min: 0,
-            onDragging: (handlerIndex, lowerValue, upperValue) {
-              _lowerValue = lowerValue;
-              _upperValue = upperValue;
-              setState(() {});
-            },
-          )
+          // FlutterSlider(
+          //   tooltip: FlutterSliderTooltip(
+          //     leftPrefix: Icon(
+          //       Icons.attach_money,
+          //       size: 19,
+          //       color: Colors.black45,
+          //     ),
+          //     rightSuffix: Icon(
+          //       Icons.attach_money,
+          //       size: 19,
+          //       color: Colors.black45,
+          //     ),
+          //   ),
+          //   trackBar: FlutterSliderTrackBar(
+          //     inactiveTrackBar: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(20),
+          //       color: Colors.black12,
+          //       border: Border.all(width: 3, color: Colors.blue),
+          //     ),
+          //     activeTrackBar: BoxDecoration(
+          //         borderRadius: BorderRadius.circular(4),
+          //         color: Colors.red.withOpacity(0.5)),
+          //   ),
+          //   values: [30, 420],
+          //   rangeSlider: true,
+          //   max: 500,
+          //   min: 0,
+          //   onDragging: (handlerIndex, lowerValue, upperValue) {
+          //     _lowerValue = lowerValue;
+          //     _upperValue = upperValue;
+          //     setState(() {});
+          //   },
+          // )
         ],
       ),
     );

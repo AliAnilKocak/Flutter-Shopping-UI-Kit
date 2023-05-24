@@ -24,14 +24,14 @@ class _VerificationScreenState extends State<VerificationScreen> {
                 Padding(
                   padding: const EdgeInsets.all(32.0),
                   child: Text("Phone Verification",
-                      style: Theme.of(context).textTheme.title),
+                      style: Theme.of(context).textTheme.subtitle1),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 16.0, right: 16.0, bottom: 48.0),
                   child: Text(
                     "Enter your code here",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
                 Container(
@@ -59,7 +59,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   child: Text(
                     "Didn't you received any code?",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
                 GestureDetector(

@@ -23,11 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Container(
             child: Column(
               children: <Widget>[
-                Text("Welcome", style: Theme.of(context).textTheme.title),
+                Text("Welcome", style: Theme.of(context).textTheme.headline6),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   child: Text("Login to your account",
-                      style: Theme.of(context).textTheme.subtitle),
+                      style: Theme.of(context).textTheme.subtitle2),
                 ),
                 EditText(title: "Email"),
                 EditText(title: "Password"),
@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: <Widget>[
                     Text(
                       "Don't have an account?  ",
-                      style: Theme.of(context).textTheme.subtitle,
+                      style: Theme.of(context).textTheme.subtitle2,
                     ),
                     GestureDetector(
                       onTap: () {

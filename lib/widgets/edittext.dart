@@ -16,7 +16,7 @@ class EditText extends StatelessWidget {
           decoration: InputDecoration(
             fillColor: Theme.of(context).dividerColor,
             hintText: title,
-            hintStyle: Theme.of(context).textTheme.display2,
+            hintStyle: Theme.of(context).textTheme.headline5,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
               borderSide: BorderSide(

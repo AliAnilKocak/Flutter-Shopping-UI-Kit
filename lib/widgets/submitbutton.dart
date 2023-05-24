@@ -21,11 +21,16 @@ class _SubmitButtonState extends State<SubmitButton> {
           child: new Row(
             children: <Widget>[
               new Expanded(
-                child: new FlatButton(
-                  shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(30.0),
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blue),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                    ),
                   ),
-                  color: Theme.of(context).primaryColor,
                   onPressed: widget.act,
                   child: new Container(
                     padding: const EdgeInsets.symmetric(
